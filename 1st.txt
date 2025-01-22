@@ -1,0 +1,20 @@
+1st :
+
+>>DevOps:
+-DevOps is a combination of development and operations.
+-It is used for delivering application very speedly and fastly
+-DevOps Originated in 2008.
+-Before DevOps waterfall Methodology ang Agile Methodology were used but they had limitation and risk.
+
+>SDLC- Software Development Lifecycle
+                   ||  
+                   ||
+         It is in two teams.    
+                   ||
+       ||-----------------------||
+     Development             Operation
+     Team                    Team
+     1.PLan                  5.DEploy
+     2.Code                  6.Operation
+     3.Build                 7.Monitor
+     4.Test
