@@ -73,7 +73,6 @@ Architectures:
  DB-Internet
 -eg: Banking appln(whenever u go in bank they say server issue).
 
-
 3.THREE-TIER:
 -Web appln
 -Appln no need to be on local
