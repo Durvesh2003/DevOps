@@ -18,3 +18,66 @@
      2.Code                  6.Operation
      3.Build                 7.Monitor
      4.Test
+
+
+2nd:
+
+>>Software Architectures:                            (application-appln)
+ 1.ONE-TIER
+ 2.TWO-TIER
+ 3.THREE-TIER
+ 4.N-TIER
+
+>TIER=SERVER=LAYER
+
+>SERVER:
+-server serves the services two the end user.
+-three servers in real time are:
+   -Web server
+   -App server
+   -Db server
+
+1.Web Server:
+-It is also called as presentation layer.
+-It is used to show(frontend) the application.
+-Who works here? UI/UX Developer.
+-What they use? Web Technologies(eg : html , Css , Js)
+
+2.App Server:
+-It is lso called as Logic Layer.
+-It is used to use(perform operation) the application.
+ eg: Booking tickets which cannot be done b application server as it only shows webpages(i.e UI) 
+-who works? Backend developer
+-what they use? Programming languages (Python, Java ,C++,etc)
+
+3.DB Server:
+-It is called Database layer
+-Used to store and retrive data.
+ eg: Whenever u book ticket u get data of time,amount,seat and i feel ur details that are stored 
+-Who works here? DB admins(team)
+-What they use? DB language(SQL,Oracle,Postgress,etc)
+
+Architectures:
+
+1.ONE-TIER:
+-It is stand alone appln
+-App will work on local Laptops
+-It will not require internet connection
+-eg: VLC Media Player
+-all layers will be on locally
+
+2.TWO-TIER:
+-Client-Server appln
+-App will work on local laptops
+-local-Presentation ,logic.
+ DB-Internet
+-eg: Banking appln(whenever u go in bank they say server issue).
+
+
+3.THREE-TIER:
+-Web appln
+-Appln no need to be on local
+-everything we can use from internet.
+-eg: Instagram, Facebook , YouTube, etc
+
+
