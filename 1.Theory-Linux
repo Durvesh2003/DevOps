@@ -80,6 +80,27 @@ Architectures:
 -eg: Instagram, Facebook , YouTube, etc
 
 
+3rd:
+Q) how to create web server and show live environment.
+==> 1.we need to have AWS account  and (also select region u want)
+ > In AWS: EC2 instances are server
+
+**to create EC2 instances we need to perform 7 steps:
+ 1) TAGS = name
+ 2) AMI = select OS, S/W packages (Amazon Linux)(select always n-1 option i.e second)
+ 3)INSTANCES_TYPE =  CPU & RAM
+ 4)KEY_PAIR= Login (public-key - managed by aws , private key - by user)
+ 5)NETWORK = -VPC(Virtual Private Network) used to create our own network.
+             -Security Groups (to define port number 8080 , range is between 0 to 65535)
+ >SSH(Secure Shell - used to communicate with server) (port number is 22)
+ 6)STORAGE = 8GB   -   16TB(max and for this we hav to pay)
+              | 
+             min
+           (used Practically)
+ 7)SUMMARY = to review 
+
+
+******************************************************LINUX********************************************************************
 
 6th:
 
