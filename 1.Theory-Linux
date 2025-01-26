@@ -1,4 +1,4 @@
-1st :
+1st :----
 
 >>DevOps:
 -DevOps is a combination of development and operations.
@@ -20,7 +20,7 @@
      4.Test
 
 
-2nd:
+2nd:----
 
 >>Software Architectures:                            (application-appln)
  1.ONE-TIER
@@ -80,7 +80,8 @@ Architectures:
 -eg: Instagram, Facebook , YouTube, etc
 
 
-3rd:
+3rd:----
+
 Q) how to create web server and show live environment.
 ==> 1.we need to have AWS account  and (also select region u want)
  > In AWS: EC2 instances are server
@@ -102,7 +103,34 @@ Q) how to create web server and show live environment.
 
 ******************************************************LINUX********************************************************************
 
-6th:
+4th:---
+
+>>>COMMANDS<<<
+
+> sudo -i              : to switch from ec2-user to root user
+> sudo su -            : to switch from ec2-user to root user
+> sudo su              : to switch from ec2-user to root user
+> logout               : to switch from root-user to ec2-user
+> ctrl d               : to switch from root-user to ec2-user
+> cat                  : to show the content of file
+> lscpu                : to show cpu information
+> cat/proc/cpuinfo     : to show cpu information
+> lsmem                : to show memory(RAM) information
+> cat/proc/meminfo     : to show memory(RAM) information
+> fdisk -l             : to show volume (ROM) information
+> lsblk                : to show volume (ROM) information
+> df                   : to show volume (ROM) information
+> df -m                : to show volume (ROM) information
+> df -I                : to show volume (ROM) information
+> ifconfig             : to show IP address
+> ip addr              : to show IP address
+> ip addr show         : to show IP address
+> hostname -i          : to show IP address
+> clear                : to clear screen
+> ctrl l               : to clear screen
+
+
+6th:----
 
 EDITORS:
 used to edit the files.
@@ -111,9 +139,9 @@ types:
 1. VIM/vi  
 2.nano
 
--vi filename:
--vim filename:   used to edit file
--nano Filename:
+> vi filename            : used to edit file
+> vim filename           : used to edit file
+> nano Filename          : used to edit file
 
     i: used to insert the content inside file/used to go in insert mode
     esc : to come out of insert mode
@@ -126,34 +154,34 @@ types of mode:
 >this command are performed inside the file(insert mode)
 
 3.SAVE MODE
-:w    : to save the file
-:q    : to quit 
-:wq   : to save and quit
-:wq!  : to save and quit forcefully
+:w                     : to save the file
+:q                     : to quit 
+:wq                    : to save and quit
+:wq!                   : to save and quit forcefully
 
 2.INSERT MODE
-i   :to insert command
-A   :used to go at end the line 
-I   :starting of the line
-O   :create new line above existing
-o   :to create new line below existing.
-
+i                      :to insert command
+A                      :used to go at end the line 
+I                      :starting of the line
+O                      :create new line above existing
+o                      :to create new line below existing.
+ 
 1.COMMAND MODE
-shift g : used to go at last line of the file
-gg      : top of the file
-:set number: to show numbers of lines inside file
-:n      : to go to specific line 
-yy      : to copy the line
-10yy    : to copy 10 lines
-p       : to paste the line
-5pp     : to paste 5 lines
-dd      : to delete
-10 dd    : to delete the specific numbers of lines
-u       : to undo 
-ctrl r  : to redo 
-/word   : to search for a word inside file
+shift g                : used to go at last line of the file
+gg                     : top of the file
+:set number            : to show numbers of lines inside file
+:n                     : to go to specific line 
+yy                     : to copy the line
+10yy                   : to copy 10 lines
+p                      : to paste the line
+5pp                    : to paste 5 lines
+dd                     : to delete
+10 dd                  : to delete the specific numbers of lines
+u                      : to undo 
+ctrl r                 : to redo 
+/word                  : to search for a word inside file
 
-wc filename : used to give number of lines , characters and word
+wc filename            : used to give number of lines , characters and word
 
 ==================================================================
 
@@ -182,6 +210,78 @@ eg= chmod 775 file1
 
 2nd method to chane permission permission
 eg = chmod u=rwx,g=x,o=w file1
+
+
+7th:----
+
+>>GREP: Global Regular Expression print
+ - used to search words in he file
+
+>>>GREP COMMANDS<<<
+
+eg: 
+> cat file2
+My name is raham
+raham is teaching devops
+raham is from hyd
+
+--- grep command to perform on above file2:
+> grep raham file2                              : to search for raham word(first method)
+> grep raham file2 -i                           : to search for raham word(-i : avoid case sensitive)
+> grep raham file2 -ic                          : to search for raham word(-c: to count that word)
+> grep raham file2 -v                           : to print the lines without raham word(-v: avoid)
+> grep 'word1\|word\|word3' file2               : to serch for multiple words
+> grep 'word1\|word\|word3' file2 -c            : (to serch for multiple words and count the number of words)
+> cat file2 | grep raham                        : to search raham word(second method)
+
+--note point::  | (pipe symbol): here first command is the input for second command.
+
+> clear                                         : used to clear console of terminal
+> lscpu                                         : used to give info about cpu.
+> cat /etc/password/ | grep ec2-user -i         : used to search for ec2-user words
+
+==================================
+
+>>SED: Stream Editor
+ - used to replace the words in the file
+
+>>>SED COMMANDS<<<
+
+> sed 's/word1/word2/' file2                      : to replace word1 with word2
+> sed 's/devops/aws/;s/hyd/Mumbai/' file2         : (here devops is replace by aws and hyd is replace by Mumbai)
+> sed '2c abc' file2                              : to replace the whole line (here 2c means second line aand the entire second line is changed by abc)
+> sed -n '5,12p' file2                            : to print from line 5 to 10(method 1)
+> cat -n file2 |sed -n '5,12p'                    : to print from line 5 to 10(method 2)
+> sed -n '10p' file2                              : to print specific line(i.e 10)
+> :%s/word1/word2/                                : to replace words outside from the file 
+> :%s/word1/word2/g                               : to replace word1 with word2 if we have repeated words in the same line
+
+
+users & groups
+to work on server wwe need to login as server
+
+ec2-user : default
+root     : admin(he has all permissions)
+
+> useradd raham                                    : to create user
+> cat /etc/passwd                                  : to list users
+> pass raham                                       : to set password
+
+1.it will not be exposed
+2.username will no be given as password
+3.min 8 charc
+
+NORMAL USER TO SUPER USER:
+
+> useradd raham
+> passwd raham
+> visudo --> :100 --> yy & p --> root=raham --> save 
+> su - raham
+> sudo useradd vijay
+
+
+
+
 
 
 
