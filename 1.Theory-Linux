@@ -20,6 +20,7 @@
      4.Test
 
 
+
 2nd:----
 
 >>Software Architectures:                            (application-appln)
@@ -80,6 +81,7 @@ Architectures:
 -eg: Instagram, Facebook , YouTube, etc
 
 
+
 3rd:----
 
 Q) how to create web server and show live environment.
@@ -128,6 +130,37 @@ Q) how to create web server and show live environment.
 > hostname -i          : to show IP address
 > clear                : to clear screen
 > ctrl l               : to clear screen
+
+
+
+5th:----
+
+>>>FILE COMMANDS<<<
+
+> touch file1                          : To create new file
+> ls                                   : to show list of files
+> ll                                   : to show list of files
+> cat file1                            : to show content of file
+> cat>> file1                          : to write/insert(edit) the content of file
+> ctrl d                               : to save content and exit from file
+> cp file1 file2                       : to copy content from file1 to file2 
+> mv file1 file2                       : to rename file (i.e file1 is rename to file2)
+> rm file1                             : to remove file
+> rm file1 -f                          : to remove file without permission
+> rm * -f                              : to remove all files
+> touch file{1..100}                   : to create 100 files
+> cp file1 file2                       : in this if both files has content then file2 is erased and only shows content of file1 it has copied and the old data of file2               is deleted.
+> cat file1>>file2                     : to copy content of file1 to file2 without deleting content of file2
+> top                                  : to check performance of server
+> htop                                 : to check performance of server(needs to install package)
+> more file1                           : to show content of file
+> head file1                           : to show first 10 lines of content
+> head -n file1                        : to show first n lines of content
+> tail file1                           : to show last 10 lines of content
+> tail -n file1                        : to show last n lines of content
+> sed -n '3,10p' file1                 : to print lines 3 to 10
+> wc file2                             : to give lines, words, characters 
+ 
 
 
 6th:----
