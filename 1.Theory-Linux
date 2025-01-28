@@ -107,6 +107,8 @@ Q) how to create web server and show live environment.
 
 4th:---
 
+>>linux was created by Linus Benedict Torvalds
+
 >>>COMMANDS<<<
 
 > sudo -i              : to switch from ec2-user to root user
