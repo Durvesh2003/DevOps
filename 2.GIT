@@ -3,6 +3,7 @@
 ********************************** GIT ***************************
 >> GIT = Global Information Tracker
          - Git is also called as version controll system(VCS) or SourceCode Management(SCM)
+         - Git and linux were created by Linus Benedict Torvalds
 >> GIT:
    -Git is used to track the files
    -it will maintain multiple versions of the same file
@@ -56,6 +57,7 @@ create a ec2 server:
 > git commit -m "commit-1" index.html   : to store file
 
    flow-> create a file ==> add ==> commit
+
 > git log                               : to show commits
 > git log -2                            : to show last two commits
 > git log --oneline                     : to show commits in single line
