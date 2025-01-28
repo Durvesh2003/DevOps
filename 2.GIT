@@ -1,1 +1,62 @@
+8th:----
 
+********************************** GIT ***************************
+>> GIT = Global Information Tracker
+         - Git is also called as version controll system(VCS) or SourceCode Management(SCM)
+>> GIT:
+   -Git is used to track the files
+   -it will maintain multiple versions of the same file
+   -It is platform independent
+   -It is free and open source
+   -They can handle larger projects efficiently
+   -it is written on c programming
+   Q) -It is 3rd generation of VCS
+   - it came in the year 2005
+    
+      
+    > VCS = - it will keep the code separately for each version
+                          ||
+v-1   : stores 100 lines of code in repsitory1(repo-1)
+v-2   : stores 200 lines of code in repsitory2(repo-2)
+v-3   : stores 300 lines of code in repsitory3(repo-3)
+
+REPO   : It is a folder where we store our code
+index.html: it is a basic file for every application
+
+v1 --- > index.html
+v2 --- > index.html
+v3 --- > index.html 
+
+> CVCS: CENTRALIZED VERSION CONTROL SYSTEM
+  EX: SVN: it can store code on a single repo.
+
+> DVCS: DISTRIBUTED VERSION CONTROL SYSTEM
+  EX: GIT: it can store code on Multiple repo.
+
+> ROLLBACK: Going back to the previous version of the application
+
+>>Git Stages:
+ WORKING DIRECTORY: where we write our source code
+ STAGING AREA : we track files here
+ REPOSITORY : Where we stoore tracked source code
+
+>>WORKING WITH GIT:
+create a ec2 server:
+> mkdir swiggy                          : to create directory
+> cd swiggy                             : to go inside the directory
+
+> yum install git -y                    : to install git og latest version (yum = package manager, install = action , git = package name , -y= yes)
+> git -v                                : to check version
+> git init                              : to install .git (local repo)
+
+> vim index.html (content is optional)  : to ceate file
+> git status                            : to check status
+> git add index.html                    : to track file
+> git status                            : to check status
+> git commit -m "commit-1" index.html   : to store file
+
+   flow-> create a file ==> add ==> commit
+> git log                               : to show commits
+> git log -2                            : to show last two commits
+> git log --oneline                     : to show commits in single line
+> git log -2 --oneline                  : to show last two commits in single line
