@@ -106,6 +106,15 @@ Dev --> Git(Movies branch) --> code --> github
 > git branch -m old_branch new_Branch         : to rename a branch
 > git branch -D recharge                      : to delete a branch
 
+PUSH commands:
+> git init
+> git add README.md
+> git commit -m "first commit"
+> git branch -M main
+> git remote add origin https://github.com/Durvesh2003/file444.git
+> git push -u origin main
+
+
 Note: to recover the delete branch-
 > git pull                                    : it will get the branch from GitHub to git
 > git pull origin recharge
@@ -124,9 +133,10 @@ Note: to recover the delete branch-
 
   PUSH: to send files from Git to Github 
   local: .git & remote: paytm.git
-  git push origin movies
-  username:
-  password:
+  > git remote add origin https://github.com/Durvesh2003/file444.git
+  > git push origin movies
+    (after this command it will say "everything upto date' and files will visible on githup repo)
+  
 
   TOKEN GENERATION: 
    account -- > settings -- >developer settings -- > PAT -- > Classic -- >Generate new token -- > classic -- > name: abcd -- > select 6 options -- > generate 
