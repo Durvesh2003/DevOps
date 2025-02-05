@@ -334,3 +334,30 @@ HISTORY:
   142  git push origin master movies
   143  history
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+11th:----
+
+MERGE:
+adding the files one branch to another branch
+> git merge branch_name
+
+REBASE:
+adding the files bet one branch to another brnch
+> git rebase branch_name
+
+MERGE VS REBASE:
+- merge will show files ,rebase will not show files
+- merge will not show branches, rebase will show branches
+- merge will show entire history,rebase will not
+
+STASH: 
+- to hide the files which are not commited
+- note: file need to be tracked but not comitted
+
+touch file2
+git stash
+git stash apply
+git stash list
+git stash clear
+git stash pop (clears last stash)
