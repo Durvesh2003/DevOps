@@ -6,6 +6,21 @@ Q) what stage on GIT and explain them?
 Q) difference between CVCS and BVCS
 Q) How to check commits in GIT?
 Q) Explaain Brances in GIT?
+Q) what is git & why to use ?
+Q) Explain stages of git ?
+Q) Diff blw CVCS & DVCS ?
+Q) How to check commits in git ?
+Q) Explain branches ?
+Q) What is .gitingore ?
+Q) Diff blw git pull vs git push ?
+Q) Diff blw git pull vs git fetch ?
+Q) Diff blw git merge vs git rebase ? 
+Q) Diff blw git merge vs git cherry pick ?
+Q) Diff blw git clone vs git pull ?
+Q) Diff blw git clone vs git fork ?
+Q) Diff blw git revert vs git restore ?
+Q) merge conflict & how to resolve ?
+Q) what is git stash ?
 
 8th:----
 
@@ -441,7 +456,89 @@ CHEERY_PICK:
 - we can merge only specific files from one branch to another with the help of commit_id
 
 SHOW
-> git show python1          : to show how much time python1 file is commited
+> git show python1          : to show how much time python1 file is committed
 
-> git log --patch
-> git log --stat
+> git log --patch            :: to show much time same file is modified after commiting or to show entire history of commit
+> git log --stat             :: to show much time same file is modified after commiting
+
+REVERT: to undo the merging
+git revert branc_name
+
+HISTORY:
+
+53  rm -rf *
+   54  mkdir paytm
+   55  cd paytm/
+   56  yum install git -y
+   57  git init
+   58  touch file1
+   59  vim file1
+   60  git add file1
+   61  git commit -m "one" file1
+   62  git branch
+   63  git branch -m master branch-1
+   64  git branch
+   65  cat file1
+   66  git checkout -b branch-2
+   67  vim file1
+   68  git add file1
+   69  git commit -m "two" file1
+   70  cat file1
+   71  git checkout branch-1
+   72  vim file1
+   73  git add file1
+   74  git commit -m "three" file1
+   75  cat file1
+   76  git merge branch-2
+   77  vim file1
+   78  git add file1
+   79  git commit -m "conflicts"
+   80  git status
+   81  git merge branch-2
+   82  git branch
+   83  touch java{1..5}
+   84  git add java*
+   85  git commit -m "java commits" java*
+   86  touch python{1..5}
+   87  git add python*
+   88  git commit -m "python commits" python*
+   89  touch php{1..5}
+   90  git add php*
+   91  git commit -m "php commits" php*
+   92  git log --oneline
+   93  git checkout branch-2
+   94  ll
+   95  git cherry-pick e300a84
+   96  ll
+   97  git cherry-pick df00587
+   98  ll
+   99  git logs
+  100  git log
+  101  git show 8b156541691925614eb6e083b6277e823fd340f0
+  102  git show python1
+  103  ll
+  104  git diff python1
+  105  vim python1
+  106  git add python1
+  107  git commit -m "new python" python1
+  108  git diff python1
+  109  vim python1
+  110  git add python1
+  111  git commit -m "new python file" python1
+  112  git diff python1
+  113  git show python1
+  114  vim python1
+  115  git add python1
+  116  git commit -m "nwe pyt commits" python1
+  117  git show python1
+  118  diff --git a/python1 b/python1
+  119  git diff python1
+  120  git log --stat
+  121  git log --patch
+  122  git merge branch-1
+  123  ll
+  124  git revert
+  125  git revert branch-1
+  126  ll
+  127  git clone https://github.com/torvalds/linux.git
+
