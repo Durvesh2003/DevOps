@@ -88,7 +88,7 @@ NOTE: this user and email will be replicated to the new commits only.
 > git show commit_id         : to show files according to commit_id(commit address)
 
 >>BRANCHES :
-- It is a individual line ofdevelopment
+- It is a individual line of development
 - developers right the code on branches
 - initially branches we create on a git
 - after write source code on git we push to github
@@ -343,7 +343,7 @@ adding the files one branch to another branch
 > git merge branch_name
 
 REBASE:
-adding the files bet one branch to another brnch
+adding the files between one branch to another branch
 > git rebase branch_name
 
 MERGE VS REBASE:
@@ -361,3 +361,87 @@ git stash apply
 git stash list
 git stash clear
 git stash pop (clears last stash)
+git stash pop --(index/commit_id)              : to remove particular stash 
+git stash -h                                   : to show all stash commands
+
+HISTORY:
+
+ 1  cd p
+    2  ll
+    3  cd swiggy/
+    4  ll
+    5  git branch
+    6  git branch -D master
+    7  git branch -D dth
+    8  ll
+    9  git branch
+   10  git pull origin dth
+   11  cd
+   12  git clone https://github.com/RAHAMSHAIK007/1045paytm.git
+   13  ll
+   14  cd 1045paytm/
+   15  git branch
+   16  git checkout train
+   17  git branch
+   18  git checkout dth
+   19  git branch
+   20  git checkout recharge
+   21  ll
+   22  git branch
+   23  git branch -D dth
+   24  git branch
+   25  git pull origin dth
+   26  git checkout dth
+   27  git branch
+   28  cd
+   29  mkdir abcd
+   30  cd abcd/
+   31  git init
+   32  ll
+   33  touch java1
+   34  git add java1
+   35  git commit -m "java commits" java1
+   36  ll
+   37  touch java2
+   38  git status
+   39  git add java2
+   40  git status
+   41  ll
+   42  git stash
+   43  ll
+   44  git stash apply
+   45  ll
+   46  git stash
+   47  ll
+   48  git stash apply
+   49  ll
+   50  git stash list
+   51  git stash clear
+   52  git stash list
+   53  git stash -h
+   54  git stash --help
+   55  git stash list
+   56  git stash
+   57  git stash list
+   58  history
+
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+12th:
+
+
+> git branch -m old_name New_name                    : To rename the branch
+
+MERGE CONFLICT:
+-when we try to merge 2 branches with same file name and different content then conflict will raise
+so we need to resolve conflict manually
+
+CHEERY_PICK:
+> git cheery-pick commit_id                          : to merge specific fis from one branh to another using commit_id
+- we can merge only specific files from one branch to another with the help of commit_id
+
+SHOW
+> git show python1          : to show how much time python1 file is commited
+
+> git log --patch
+> git log --stat
